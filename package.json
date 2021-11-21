@@ -8,6 +8,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "presentar" : " prisma db seed && next build && next start",
     "test": "xo !*.config.js",
     "favicons": "gulp generateFavicons",
     "vercel-build": "prisma generate && cross-env DATABASE_URL=$MIGRATE_DB_URL prisma db push && cross-env DATABASE_URL=$MIGRATE_DB_URL prisma db seed && next build"
